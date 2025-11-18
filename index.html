@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Meal Plan</title>
 
-  <!-- CSS INSIDE HTML -->
   <style>
     body {
         font-family: 'Times New Roman', Times, serif;
@@ -55,6 +54,23 @@
         border-radius: 4px;
         border: none;
     }
+
+    #saved-meals {
+        margin-top: 15px;
+        background: #fff3e0;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+    }
+
+    #saved-meals h3 {
+        margin: 0 0 10px 0;
+    }
+
+    #saved-meals ul {
+        padding-left: 20px;
+        margin: 0;
+    }
   </style>
 </head>
 
@@ -63,8 +79,8 @@
     <h1>The Meal Plan</h1>
     <h3>By: Aren Jake Bautista</h3>
 
-    <!-- SIGNUP FORM -->
     <div id="form-container">
+      <!-- SIGNUP FORM -->
       <form id="signup-form" class="form">
         <h2>Sign Up</h2>
         <input type="text" id="signup-username" placeholder="Username" required />
@@ -121,11 +137,15 @@
 
       <button id="save">Save Meal</button>
       <button id="logout">Logout</button>
-    </div>
 
+      <!-- SAVED MEALS DISPLAY -->
+      <div id="saved-meals" class="hidden">
+        <h3>Saved Meals</h3>
+        <ul id="meals-list"></ul>
+      </div>
+    </div>
   </div>
 
-  <!-- LINK JAVASCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>
